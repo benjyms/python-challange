@@ -18,4 +18,12 @@ print(f"CSV Header: {data_header}")
 # # Read each row of data after the header
 for row in data:
     print(row)
+    
+# Identify total months in the data set
+months = str(data[1])    
+total_months = len(months)
 
+
+    
+
+    
