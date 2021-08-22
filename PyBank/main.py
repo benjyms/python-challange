@@ -121,5 +121,5 @@ fa_df = pd.DataFrame({
 fa_df
 
 
-fa_df.to_csv("PyBank/Resources/Financial_analysis.txt", index=False, header=True)
+fa_df.to_csv("PyBank/Analysis/Financial_analysis.txt", index=False, header=True)
 
