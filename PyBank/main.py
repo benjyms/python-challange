@@ -63,9 +63,9 @@ bd_dec_df = bd_dec_df.reset_index(drop=True)
 # # # # #capture date and largetest decrease
 greatest_decrease_date = bd_dec_df.iloc[0,0]
 greatest_decrease_amount = bd_dec_df.iloc[0,2]
-print(greatest_decrease_date)
-print(greatest_decrease_amount)
-print("Greatest Decrease in Profits: " + greatest_decrease_date + " " + "($" + str(greatest_decrease_amount) + ")")
+# print(greatest_decrease_date)
+# print(greatest_decrease_amount)
+# print("Greatest Decrease in Profits: " + greatest_decrease_date + " " + "($" + str(greatest_decrease_amount) + ")")
 
 
 # In[242]:
@@ -85,9 +85,9 @@ bd_asc_df = bd_asc_df.reset_index(drop=True)
 # # # # #capture date and largetest decrease
 greatest_increase_date = bd_asc_df.iloc[0,0]
 greatest_increase_amount = bd_asc_df.iloc[0,2]
-print(greatest_increase_date)
-print(greatest_increase_amount)
-print("Greatest Increase in Profits: " + greatest_increase_date + " " + "($" + str(greatest_increase_amount) + ")")
+# print(greatest_increase_date)
+# print(greatest_increase_amount)
+# print("Greatest Increase in Profits: " + greatest_increase_date + " " + "($" + str(greatest_increase_amount) + ")")
 
 
 # In[248]:
@@ -95,7 +95,7 @@ print("Greatest Increase in Profits: " + greatest_increase_date + " " + "($" + s
 
 # Create Financial Analysis Summary
 FA = ("Financial Analysis")
-dash = ("--------------------------------")
+dash = ("------------------------------------")
 TM = ("Total Months: " + str(month_count))
 T = ("Total: $" + str(total_pl))
 AC = ("Average Change: $" + str(plchg_mean))
@@ -118,7 +118,7 @@ fa_df = pd.DataFrame({
     "Financial Analysis": [dash, TM, T, AC, GI, GD],
     })
 
-fa_df
+
 
 
 fa_df.to_csv("PyBank/Analysis/Financial_analysis.txt", index=False, header=True)
